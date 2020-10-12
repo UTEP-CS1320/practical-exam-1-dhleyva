@@ -11,13 +11,15 @@ void main_lastd(void) {
   int x, y;
   scanf("%d %d", &x, &y);
 
-  int x_digit = x / 10;
-  int y_digit = y / 10;
+  int x_digit = x % 10; 
+  int y_digit = y % 10;
+  // The command _ % 10 gives us the last digit of a number (changed / with %)
 
   if(x_digit == y_digit) {
-    print("TRUE");
+    printf("TRUE"); 
   }
-
-  print("FALSE");
-
+  else {
+    printf("FALSE");
+  }
+  // printf was mispelled, it was wissing the f
 }
