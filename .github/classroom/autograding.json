@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "1-1",
+      "setup": "g++ -o main main.c",
+      "run": "./main",
+      "input": "0 10",
+      "output": "TRUE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "1-2",
+      "setup": "g++ -o main main.c",
+      "run": "./main",
+      "input": "12 11",
+      "output": "FALSE",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
